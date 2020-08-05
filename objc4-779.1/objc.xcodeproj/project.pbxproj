@@ -56,7 +56,12 @@
 		6E1475ED21DFDB1B001357EA /* llvm-type_traits.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1475E821DFDB1B001357EA /* llvm-type_traits.h */; };
 		6E1475EE21DFDB1B001357EA /* llvm-MathExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1475E921DFDB1B001357EA /* llvm-MathExtras.h */; };
 		6ECD0B1F2244999E00910D88 /* llvm-DenseSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECD0B1E2244999E00910D88 /* llvm-DenseSet.h */; };
-		700DE7BD24DABD1800EA2348 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 700DE7BC24DABD1800EA2348 /* main.m */; };
+		700DE7E424DAC1FA00EA2348 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 700DE7E324DAC1FA00EA2348 /* main.m */; };
+		700DE7E724DAC28100EA2348 /* PRFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 700DE7E624DAC28100EA2348 /* PRFather.m */; };
+		700DE7EA24DAC29800EA2348 /* PRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 700DE7E924DAC29800EA2348 /* PRPerson.m */; };
+		700DE7ED24DAC2B200EA2348 /* PRSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 700DE7EC24DAC2B200EA2348 /* PRSon.m */; };
+		700DE7F124DAC2D100EA2348 /* PRFather+Cry.m in Sources */ = {isa = PBXBuildFile; fileRef = 700DE7F024DAC2D100EA2348 /* PRFather+Cry.m */; };
+		700DE7F424DAC2E900EA2348 /* PRSon+Cry.m in Sources */ = {isa = PBXBuildFile; fileRef = 700DE7F324DAC2E900EA2348 /* PRSon+Cry.m */; };
 		7213C36321FA7C730090A271 /* NSObject-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7213C36221FA7C730090A271 /* NSObject-internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7593EC58202248E50046AB96 /* objc-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 7593EC57202248DF0046AB96 /* objc-object.h */; };
 		75A9504F202BAA0600D7D56F /* objc-locks-new.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A9504E202BAA0300D7D56F /* objc-locks-new.h */; };
@@ -208,7 +213,17 @@
 		6E1475E921DFDB1B001357EA /* llvm-MathExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; name = "llvm-MathExtras.h"; path = "runtime/llvm-MathExtras.h"; sourceTree = "<group>"; tabWidth = 2; };
 		6ECD0B1E2244999E00910D88 /* llvm-DenseSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "llvm-DenseSet.h"; path = "runtime/llvm-DenseSet.h"; sourceTree = "<group>"; };
 		700DE7B524DABD0400EA2348 /* Gao_Debug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gao_Debug; sourceTree = BUILT_PRODUCTS_DIR; };
-		700DE7BC24DABD1800EA2348 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		700DE7E324DAC1FA00EA2348 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		700DE7E524DAC28100EA2348 /* PRFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRFather.h; sourceTree = "<group>"; };
+		700DE7E624DAC28100EA2348 /* PRFather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRFather.m; sourceTree = "<group>"; };
+		700DE7E824DAC29800EA2348 /* PRPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPerson.h; sourceTree = "<group>"; };
+		700DE7E924DAC29800EA2348 /* PRPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPerson.m; sourceTree = "<group>"; };
+		700DE7EB24DAC2B200EA2348 /* PRSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRSon.h; sourceTree = "<group>"; };
+		700DE7EC24DAC2B200EA2348 /* PRSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRSon.m; sourceTree = "<group>"; };
+		700DE7EF24DAC2D100EA2348 /* PRFather+Cry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PRFather+Cry.h"; sourceTree = "<group>"; };
+		700DE7F024DAC2D100EA2348 /* PRFather+Cry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PRFather+Cry.m"; sourceTree = "<group>"; };
+		700DE7F224DAC2E900EA2348 /* PRSon+Cry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PRSon+Cry.h"; sourceTree = "<group>"; };
+		700DE7F324DAC2E900EA2348 /* PRSon+Cry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PRSon+Cry.m"; sourceTree = "<group>"; };
 		7213C36221FA7C730090A271 /* NSObject-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject-internal.h"; path = "runtime/NSObject-internal.h"; sourceTree = "<group>"; };
 		7593EC57202248DF0046AB96 /* objc-object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-object.h"; path = "runtime/objc-object.h"; sourceTree = "<group>"; };
 		75A9504E202BAA0300D7D56F /* objc-locks-new.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-locks-new.h"; path = "runtime/objc-locks-new.h"; sourceTree = "<group>"; };
@@ -333,6 +348,7 @@
 		08FB7794FE84155DC02AAC07 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				700DE7E224DAC1FA00EA2348 /* Gao_Debug */,
 				0B85A2A024278F6100CCEA33 /* Gao_include */,
 				BC8B5D1212D3D48100C78A5B /* libauto.dylib */,
 				838485C60D6D687700CEA253 /* Public Headers */,
@@ -342,7 +358,6 @@
 				838486270D6D690F00CEA253 /* Obsolete Source */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				838485B20D6D67F900CEA253 /* Other */,
-				700DE7B624DABD0400EA2348 /* Gao_Debug */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				F9BCC72A205C6A1600DD9AFC /* Frameworks */,
 			);
@@ -487,12 +502,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		700DE7B624DABD0400EA2348 /* Gao_Debug */ = {
+		700DE7E224DAC1FA00EA2348 /* Gao_Debug */ = {
 			isa = PBXGroup;
 			children = (
-				700DE7BC24DABD1800EA2348 /* main.m */,
+				700DE7E324DAC1FA00EA2348 /* main.m */,
+				700DE7EE24DAC2B800EA2348 /* Category */,
+				700DE7E824DAC29800EA2348 /* PRPerson.h */,
+				700DE7E924DAC29800EA2348 /* PRPerson.m */,
+				700DE7E524DAC28100EA2348 /* PRFather.h */,
+				700DE7E624DAC28100EA2348 /* PRFather.m */,
+				700DE7EB24DAC2B200EA2348 /* PRSon.h */,
+				700DE7EC24DAC2B200EA2348 /* PRSon.m */,
 			);
 			path = Gao_Debug;
+			sourceTree = "<group>";
+		};
+		700DE7EE24DAC2B800EA2348 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				700DE7EF24DAC2D100EA2348 /* PRFather+Cry.h */,
+				700DE7F024DAC2D100EA2348 /* PRFather+Cry.m */,
+				700DE7F224DAC2E900EA2348 /* PRSon+Cry.h */,
+				700DE7F324DAC2E900EA2348 /* PRSon+Cry.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		838485B20D6D67F900CEA253 /* Other */ = {
@@ -842,7 +875,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				700DE7BD24DABD1800EA2348 /* main.m in Sources */,
+				700DE7ED24DAC2B200EA2348 /* PRSon.m in Sources */,
+				700DE7EA24DAC29800EA2348 /* PRPerson.m in Sources */,
+				700DE7F124DAC2D100EA2348 /* PRFather+Cry.m in Sources */,
+				700DE7E424DAC1FA00EA2348 /* main.m in Sources */,
+				700DE7E724DAC28100EA2348 /* PRFather.m in Sources */,
+				700DE7F424DAC2E900EA2348 /* PRSon+Cry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
