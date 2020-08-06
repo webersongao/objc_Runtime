@@ -23,6 +23,15 @@
     
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.userNameCount = 100;
+        self.userNameDict = @{};
+    }
+    return self;
+}
 
 + (void)initialize
 {
