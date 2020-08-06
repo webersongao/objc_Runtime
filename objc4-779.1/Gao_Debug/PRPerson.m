@@ -7,6 +7,13 @@
 
 #import "PRPerson.h"
 
+@interface PRPerson ()
+
+@property (nonatomic, assign) NSInteger userNameCount;  //!< 属性注释
+@property (nonatomic, weak) NSDictionary *userNameDict;  //!< 属性注释
+
+@end
+
 @implementation PRPerson
 
 

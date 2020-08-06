@@ -103,8 +103,8 @@ enum HaveNew { DontHaveNew = false, DoHaveNew = true };
 
 struct SideTable {
     spinlock_t slock;
-    RefcountMap refcnts;
-    weak_table_t weak_table;
+    RefcountMap refcnts; // WBS 保存计数器的map
+    weak_table_t weak_table;  // WBS 保存弱引用记录的table
 
     SideTable() {
         memset(&weak_table, 0, sizeof(weak_table));
