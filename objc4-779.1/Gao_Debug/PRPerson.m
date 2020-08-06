@@ -17,4 +17,21 @@
 }
 
 
++ (void)initialize
+{
+    if (self == [PRPerson class]) {
+        NSLog(@"WBS PRPerson initialize");
+    }
+}
+
+-(void)eatFoodAndDrink{
+    
+    NSLog(@"WBS  We Should drink and eat");
+    
+}
+
+
+
+
+
 @end

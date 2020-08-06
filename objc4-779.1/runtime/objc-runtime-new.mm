@@ -2938,6 +2938,7 @@ void
 map_images(unsigned count, const char * const paths[],
            const struct mach_header * const mhdrs[])
 {
+    // WBS 001 runtimeLock 加锁
     mutex_locker_t lock(runtimeLock);
     return map_images_nolock(count, paths, mhdrs);
 }
@@ -3706,12 +3707,13 @@ void prepare_load_methods(const headerType *mhdr)
     for (i = 0; i < count; i++) {
         schedule_class_load(remapClass(classlist[i]));
     }
-
+//    printf("WBS +++ prepare_load_methods 准备 各个类及类的分类\n");
     category_t * const *categorylist = _getObjc2NonlazyCategoryList(mhdr, &count);
     for (i = 0; i < count; i++) {
         category_t *cat = categorylist[i];
         Class cls = remapClass(cat->cls);
         if (!cls) continue;  // category for ignored weak-linked class
+        printf("WBS ====== prepare_load_methods 准备的类及分类: +[%s(%s) load]\n",cls->nameForLogging(),_category_getName(cat));
         if (cls->isSwiftStable()) {
             _objc_fatal("Swift class extensions and categories on Swift "
                         "classes are not allowed to have +load methods");

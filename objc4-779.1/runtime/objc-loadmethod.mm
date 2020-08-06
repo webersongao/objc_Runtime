@@ -184,20 +184,19 @@ void remove_category_from_loadable_list(Category cat)
 static void call_class_loads(void)
 {
     int i;
-    
+//    printf("WBS +++ call_class_loads 调用类的load方法");
     // Detach current loadable list.
     struct loadable_class *classes = loadable_classes;
     int used = loadable_classes_used;
     loadable_classes = nil;
     loadable_classes_allocated = 0;
     loadable_classes_used = 0;
-    
     // Call all +loads for the detached list.
     for (i = 0; i < used; i++) {
         Class cls = classes[i].cls;
         load_method_t load_method = (load_method_t)classes[i].method;
-        if (!cls) continue; 
-
+        if (!cls) continue;
+        printf("WBS ========= call_class_loads LOAD: +[%s load]\n", cls->nameForLogging());
         if (PrintLoading) {
             _objc_inform("LOAD: +[%s load]\n", cls->nameForLogging());
         }
@@ -233,7 +232,7 @@ static bool call_category_loads(void)
     loadable_categories = nil;
     loadable_categories_allocated = 0;
     loadable_categories_used = 0;
-
+//    printf("WBS +++ call_category_loads 循环调用各个类 的分类的load方法\n");
     // Call all +loads for the detached list.
     for (i = 0; i < used; i++) {
         Category cat = cats[i].cat;
@@ -248,11 +247,11 @@ static bool call_category_loads(void)
                              cls->nameForLogging(), 
                              _category_getName(cat));
             }
+            printf("WBS ====== call_category_loads LOAD: +[%s(%s) load]\n",cls->nameForLogging(),_category_getName(cat));
             (*load_method)(cls, @selector(load));
             cats[i].cat = nil;
         }
     }
-
     // Compact detached list (order-preserving)
     shift = 0;
     for (i = 0; i < used; i++) {

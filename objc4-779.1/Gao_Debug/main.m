@@ -24,8 +24,9 @@ int main(int argc, const char * argv[]) {
         
         
         
+        PRFather *fat = [[PRFather alloc] init];
         
-        NSLog(@"WBS ---- Over");
+        [fat eatFoodAndDrink];
         
     }
     return 0;
